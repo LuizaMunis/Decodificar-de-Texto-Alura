@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --font-family: 'inter', sans-serif;
+    --cor-principal:#0A3871;
+}
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f3f5fc;
+}
+
+header{
+    padding: 2.5rem;
+}
+
+textarea.input{
+    width: 480px;
+    height: 300px;
+    background-color: transparent;
+    resize: none;
+    margin-left: 11rem;
+    outline: none;
+    font-size: 32px;
+    font-family: var(--font-family);
+    font-size: 2rem;
+    color: var(--cor-principal);
+    
+}
+
+textarea.input::placeholder{
+    color:  var(--cor-principal);
+    font-family: var(--font-family);
+    font-size: 2rem;
+}
+
+.Alert {
+    display: flex;
+    flex-direction: row;
+    margin-left: 13rem;
+    align-items: center; 
+    gap:8px;
+    color:#495057;
+    font-family: var(--font-family);
+    font-size: 0.75rem;
+    opacity: 80%;
+}
+
+.botoes{
+    display: flex;
+    margin-left: 10rem;
+    gap: 24px;
+}
+
+button{
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    width:328px;
+    Height: 67px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+.criptografar{
+    color: #ffffff;
+    background-color: var(--cor-principal);
+}
+
+.Descriptografar{
+    color: var(--cor-principal);
+    background-color:#D8DFE8;
+    border:1px solid var(--cor-principal); 
+}
+
+button:hover{
+    background-color: #4f76a7;
+    color: #ffffff;
+}
+
+footer{
+    background-color: #4f76a7;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px 0;
+    font-family: var(--font-family);
+   
+}
+
+
+
+
+
