@@ -2,6 +2,8 @@
 
 :root {
     --cor-principal:#0A3871;
+    --fundo-transparente:rgba(173,216,230,0.3);
+    --cor-texto: #ffffff;
 }
 
 *{
@@ -10,55 +12,71 @@
     border: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f3f5fc;
+}
+
+body{
+   background-image: url(../assets/Fundo.png);
+   background-size: cover;
 }
 
 main{
     display: flex;
     gap:40px;
+    margin-left: 10%;
 }
 
-header{
-    width: 20%;
-}
 .logo{
-    padding-top: 40px;
-    margin-left: 40px;
+    display: flex;
+    padding-top: 3%;
+    margin-left: 3%;
+}
 
+#container_input{
+    background-color:var(--fundo-transparente);
+    width: 80%;
+    margin-top: 1.25rem;
+    height: 340px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    
 }
 
 textarea.input{
-    width: 480px;
-    margin-top: 20px;
-    height: 340px;
-    margin-left: 11rem;
+    
     outline: none;
-    font-size: 2rem;
-    color: var(--cor-principal);
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+    padding: 2%;
     resize: none;
+    background: transparent;
+    text-transform: lowercase;
+    
 }
 
 textarea.input::placeholder{
-    color:  var(--cor-principal);
-    font-size: 2rem;
+    color: var(--cor-texto);
+    font-size: 1.5rem;
 }
 
-.Alert {
+.container_alert {
     display: flex;
     flex-direction: row;
-    margin-left: 13rem;
+    margin-left: 11%;
     align-items: center; 
     gap:8px;
-    color:#495057;
+    color:#c0c0c0;
     font-size: 0.75rem;
     opacity: 80%;
 }
 
-.botoes{
+.container_button{
     display: flex;
-    margin-left: 10rem;
+    margin-left: 10%;
     gap: 24px;
-    margin-top: 32px;
+    margin-top: 1.25rem;
 }
 
 button{
@@ -70,7 +88,7 @@ button{
 }
 
 .criptografar{
-    color: #ffffff;
+    color: var(--cor-texto);
     background-color: var(--cor-principal);
 }
 
@@ -82,29 +100,34 @@ button{
 
 button:hover{
     background-color: #4f76a7;
-    color: #ffffff;
+    color: var(--cor-texto);
 }
 
 .section2{
-    width: 340px;
+    width: 25%;
     height: 500px;
-    background-color: white;
-    border-radius: 32px;
+    background-color: var(--fundo-transparente);
+    border-radius: 2rem;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    gap:10px;
 }
 
-.mensagem{
+.container_mensagem{
     display: flex;
     flex-direction: column;
     background-color: transparent;
+    text-align: center;
+    align-items: center;
+    gap:10px;
+    justify-content: center;
+
 }
 
-.img{
-    Width:270px;
+.img_mensagem{
+    Width:170px;
     Height:auto;
-    background-color: white;
-    margin-left: 30px;
+    margin: 10%;
 }
 
 .Copiar{
@@ -112,10 +135,61 @@ button:hover{
     background-color:#D8DFE8;
     border:1px solid var(--cor-principal); 
     height: 67px;
-    width: 236px;
-    margin-left: 40px;
+    width: 14.75rem;
 }
 
-p{
-    background-color: transparent;
+#nomensagem{
+  background-color: transparent;
+  width: 250px;
+  color:var(--cor-texto);
 }
+
+span{
+  background-color: transparent;
+  font-size: 13px;
+  color:#c0c0c0;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    color: var(--cor-texto);
+}
+
+@media (max-width: 800px){
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   .img_mensagem{
+        display: none;
+    }
+
+    .section2{
+        width: 100%;
+        height: 10%;
+        justify-content: center;
+}
+}
+
+@media (max-width: 400px){
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   .img_mensagem{
+        display: none;
+    }
+
+
+    .section2{
+        width: 100%;
+        height: 10%;
+        justify-content: center;
+}
+
+    .container_button{
+    flex-direction: column;
+}}
