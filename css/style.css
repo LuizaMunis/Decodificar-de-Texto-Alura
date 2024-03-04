@@ -74,7 +74,6 @@ textarea.input::placeholder{
 
 .container_button{
     display: flex;
-    margin-left: 10%;
     gap: 24px;
     margin-top: 1.25rem;
 }
