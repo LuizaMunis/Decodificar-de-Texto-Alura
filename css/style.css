@@ -36,7 +36,7 @@ main{
     width: 80%;
     margin-top: 1.25rem;
     height: 340px;
-    margin-left: 10%;
+    margin-left: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ textarea.input{
     outline: none;
     font-size: 1.5rem;
     color: var(--cor-texto);
-    padding: 2%;
+    padding: 10%;
     resize: none;
     background: transparent;
     text-transform: lowercase;
@@ -148,6 +148,18 @@ span{
   background-color: transparent;
   font-size: 13px;
   color:#c0c0c0;
+}
+
+
+.inputext{
+    outline: none;
+    font-size: 1.5rem;
+    color: var(--cor-texto);
+    padding: 10%;
+    margin-left: 10%;
+    resize: none;
+    background: transparent;
+    height: 15em;
 }
 
 footer{
